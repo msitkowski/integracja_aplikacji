@@ -1,8 +1,12 @@
 package applications;
 
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlType;
+
 /**
  * Created by mateu on 2017-05-23.
  */
+@XmlType(name = "application")
 public class Application {
 
     private Integer id;
@@ -32,6 +36,7 @@ public class Application {
         this.notes = notes;
     }
 
+    @XmlAttribute
     public Integer getId() {
         return id;
     }

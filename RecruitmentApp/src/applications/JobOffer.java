@@ -1,8 +1,11 @@
 package applications;
 
+import javax.xml.bind.annotation.XmlType;
+
 /**
  * Created by mateu on 2017-05-23.
  */
+@XmlType(name = "jobOffer")
 public class JobOffer {
 
     private String title;

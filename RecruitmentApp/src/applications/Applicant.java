@@ -1,8 +1,11 @@
 package applications;
 
+import javax.xml.bind.annotation.XmlType;
+
 /**
  * Created by mateu on 2017-05-23.
  */
+@XmlType(name = "applicant")
 public class Applicant {
 
     private String name;

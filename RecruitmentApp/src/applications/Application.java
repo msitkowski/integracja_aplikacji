@@ -9,7 +9,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "application")
 public class Application {
 
-    private Integer id;
+    private String id;
     private JobOffer jobOffer;
     private Applicant applicant;
     private String recruiter;
@@ -21,7 +21,7 @@ public class Application {
     public Application() {
     }
 
-    public Application(Integer id, JobOffer jobOffer,
+    public Application(String id, JobOffer jobOffer,
                        Applicant applicant, String recruiter,
                        String status, String date,
                        Boolean data_processing_agreement, String notes) {
@@ -37,11 +37,11 @@ public class Application {
     }
 
     @XmlAttribute
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 

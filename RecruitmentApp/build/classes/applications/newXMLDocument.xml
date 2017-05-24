@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<applications
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='schema1.xsd'>
+    <application id="1">
+        <applicant>
+            <name>Rashad Chen</name>
+            <phone>524-251-733</phone>
+            <email>et.magnis@tellusfaucibusleo.edu</email>
+        </applicant>
+        <data_processing_agreement>false</data_processing_agreement>
+        <date>02/09/2017</date>
+        <jobOffer>
+            <contact_email>mauris@eu.org</contact_email>
+            <contact_phone>497-248-866</contact_phone>
+            <contract_type>B2B</contract_type>
+            <description>
+                erat. Sed nunc est, mollis non, cursus non, egestas a, dui. Cras pellentesque. Sed dictum. Proin eget odio. Aliquam
+            </description>
+            <max_salary>7761</max_salary>
+            <min_salary>4163</min_salary>
+            <title>ICT</title>
+        </jobOffer>
+        <notes>
+            tempor augue ac ipsum. Phasellus vitae mauris sit amet lorem semper
+        </notes>
+        <recruiter>Lunea Heath</recruiter>
+        <status>Otrzymana</status>
+    </application>
+    <application id="2">
+        <applicant>
+            <name>Benedict Sheppard</name>
+            <phone>732-618-376</phone>
+            <email>Fusce.mi@euneque.ca</email>
+        </applicant>
+        <data_processing_agreement>true</data_processing_agreement>
+        <date>07/12/2017</date>
+        <jobOffer>
+            <contact_email>luctus.lobortis.Class@hymenaeos.com</contact_email>
+            <contact_phone>655-288-888</contact_phone>
+            <contract_type>Umowa o pracę</contract_type>
+            <description>
+                lorem eu metus. In lorem. Donec elementum, lorem ut aliquam iaculis, lacus pede sagittis augue, eu
+            </description>
+            <max_salary>6895</max_salary>
+            <min_salary>4320</min_salary>
+            <title>Tester Automatyczny</title>
+        </jobOffer>
+        <notes>
+            auctor non, feugiat nec, diam. Duis mi enim, condimentum eget, volutpat ornare, facilisis
+        </notes>
+        <recruiter>Martena Clements</recruiter>
+        <status>Otrzymana</status>
+    </application>
+    <application id="3">
+        <applicant>
+            <name>Hasad Turner</name>
+            <phone>367-155-842</phone>
+            <email>pede.Praesent@Integer.ca</email>
+        </applicant>
+        <data_processing_agreement>true</data_processing_agreement>
+        <date>31/07/2017</date>
+        <jobOffer>
+            <contact_email>Ut.nec.urna@magnaLoremipsum.org</contact_email>
+            <contact_phone>738-454-393</contact_phone>
+            <contract_type>Umowa o pracę</contract_type>
+            <description>
+                eu enim. Etiam imperdiet dictum magna. Ut tincidunt orci quis lectus. Nullam suscipit, est ac facilisis
+            </description>
+            <max_salary>10056</max_salary>
+            <min_salary>5398</min_salary>
+            <title>Tester Automatyczny</title>
+        </jobOffer>
+        <notes>
+            aliquet odio. Etiam ligula tortor, dictum eu, placerat eget, venenatis a, magna. Lorem
+        </notes>
+        <recruiter>Zephr Kidd</recruiter>
+        <status>Rozmowa</status>
+    </application>
+
+</applications>

@@ -33,9 +33,9 @@
 	<xs:complexType name="jobOffer">
 		<xs:sequence>
 			<xs:element name="contact_email" type="xs:string" minOccurs="1"/>
-			<xs:element name="contact_phone" type="xs:string" minOccurs="1"/>
+			<xs:element name="contact_phone" type="xs:string" minOccurs="0"/>
 			<xs:element name="contract_type" type="xs:string" minOccurs="1"/>
-			<xs:element name="description" type="xs:string" minOccurs="1"/>
+			<xs:element name="description" type="xs:string" minOccurs="0"/>
 			<xs:element name="max_salary" type="xs:double" minOccurs="1"/>
 			<xs:element name="min_salary" type="xs:double" minOccurs="1"/>
 			<xs:element name="title" type="xs:string" minOccurs="1"/>

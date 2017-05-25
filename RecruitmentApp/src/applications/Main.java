@@ -12,6 +12,7 @@ import java.util.List;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
+import javax.xml.ws.Endpoint;
 
 /**
  *
@@ -57,21 +58,9 @@ public class Main {
             // add new application to applications loaded from file
             am.getApplications().add(application);
             
-            // searching applications for python developer job
-            List<Application> results = am.searchByOffer("Python Developer");
-            System.out.println(results);
-            
-            // create new ApplicationList object
-            // for search results which will be saved in file
-            ApplicationList appList = new ApplicationList();
-            appList.setApplications(results);
-            
-            // create output file for results
-            FileWriter outputFile = new FileWriter("python_devs.xml");
-            // create marshaller object from context
-            Marshaller ms = context.createMarshaller();
-            // save search results in file using marshaller
-            ms.marshal(appList, outputFile);
+            // add service to end point
+            String url = "http://localhost:7891/recruitmentapp";
+            Endpoint.publish(url, am);
         }
         catch (Exception ex) {
             ex.printStackTrace();

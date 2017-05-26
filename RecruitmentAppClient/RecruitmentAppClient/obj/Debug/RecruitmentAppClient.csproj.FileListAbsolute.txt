@@ -1,0 +1,9 @@
+D:\STUDIA\magisterka\semestr 2\Integracja Aplikacji\RecruitmentAppClient\RecruitmentAppClient\bin\Debug\RecruitmentAppClient.exe.config
+D:\STUDIA\magisterka\semestr 2\Integracja Aplikacji\RecruitmentAppClient\RecruitmentAppClient\bin\Debug\RecruitmentAppClient.exe
+D:\STUDIA\magisterka\semestr 2\Integracja Aplikacji\RecruitmentAppClient\RecruitmentAppClient\bin\Debug\RecruitmentAppClient.pdb
+D:\STUDIA\magisterka\semestr 2\Integracja Aplikacji\RecruitmentAppClient\RecruitmentAppClient\obj\Debug\RecruitmentAppClient.csprojResolveAssemblyReference.cache
+D:\STUDIA\magisterka\semestr 2\Integracja Aplikacji\RecruitmentAppClient\RecruitmentAppClient\obj\Debug\RecruitmentAppClient.Form1.resources
+D:\STUDIA\magisterka\semestr 2\Integracja Aplikacji\RecruitmentAppClient\RecruitmentAppClient\obj\Debug\RecruitmentAppClient.Properties.Resources.resources
+D:\STUDIA\magisterka\semestr 2\Integracja Aplikacji\RecruitmentAppClient\RecruitmentAppClient\obj\Debug\RecruitmentAppClient.csproj.GenerateResource.Cache
+D:\STUDIA\magisterka\semestr 2\Integracja Aplikacji\RecruitmentAppClient\RecruitmentAppClient\obj\Debug\RecruitmentAppClient.exe
+D:\STUDIA\magisterka\semestr 2\Integracja Aplikacji\RecruitmentAppClient\RecruitmentAppClient\obj\Debug\RecruitmentAppClient.pdb

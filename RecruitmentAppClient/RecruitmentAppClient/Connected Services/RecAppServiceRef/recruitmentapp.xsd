@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://applications/" targetNamespace="http://applications/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Exception" type="tns:Exception" />
+  <xs:element name="addApplication" type="tns:addApplication" />
+  <xs:element name="addApplicationResponse" type="tns:addApplicationResponse" />
+  <xs:element name="getApplications" type="tns:getApplications" />
+  <xs:element name="getApplicationsResponse" type="tns:getApplicationsResponse" />
+  <xs:element name="login" type="tns:login" />
+  <xs:element name="loginResponse" type="tns:loginResponse" />
+  <xs:element name="logout" type="tns:logout" />
+  <xs:element name="logoutResponse" type="tns:logoutResponse" />
+  <xs:element name="removeApplication" type="tns:removeApplication" />
+  <xs:element name="removeApplicationResponse" type="tns:removeApplicationResponse" />
+  <xs:element name="searchByApplicant" type="tns:searchByApplicant" />
+  <xs:element name="searchByApplicantResponse" type="tns:searchByApplicantResponse" />
+  <xs:element name="searchByOffer" type="tns:searchByOffer" />
+  <xs:element name="searchByOfferResponse" type="tns:searchByOfferResponse" />
+  <xs:element name="searchByRecruiter" type="tns:searchByRecruiter" />
+  <xs:element name="searchByRecruiterResponse" type="tns:searchByRecruiterResponse" />
+  <xs:element name="searchByStatus" type="tns:searchByStatus" />
+  <xs:element name="searchByStatusResponse" type="tns:searchByStatusResponse" />
+  <xs:element name="setApplications" type="tns:setApplications" />
+  <xs:element name="setApplicationsResponse" type="tns:setApplicationsResponse" />
+  <xs:complexType name="setApplications">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg0" type="tns:application" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="application">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="applicant" type="tns:applicant" />
+      <xs:element minOccurs="0" name="data_processing_agreement" type="xs:boolean" />
+      <xs:element minOccurs="0" name="date" type="xs:string" />
+      <xs:element minOccurs="0" name="jobOffer" type="tns:jobOffer" />
+      <xs:element minOccurs="0" name="notes" type="xs:string" />
+      <xs:element minOccurs="0" name="recruiter" type="xs:string" />
+      <xs:element minOccurs="0" name="status" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="applicant">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element minOccurs="0" name="phone" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="jobOffer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="contact_email" type="xs:string" />
+      <xs:element minOccurs="0" name="contact_phone" type="xs:string" />
+      <xs:element minOccurs="0" name="contract_type" type="xs:string" />
+      <xs:element minOccurs="0" name="description" type="xs:string" />
+      <xs:element minOccurs="0" name="max_salary" type="xs:double" />
+      <xs:element minOccurs="0" name="min_salary" type="xs:double" />
+      <xs:element minOccurs="0" name="title" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setApplicationsResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="removeApplication">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removeApplicationResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="removed" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Exception">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="login">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="login" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="loginResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="sessionID" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="searchByOffer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="offer" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="searchByOfferResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="application" type="tns:application" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="logout">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="sessionid" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="logoutResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="searchByStatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="status" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="searchByStatusResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="application" type="tns:application" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="searchByApplicant">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="applicant" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="searchByApplicantResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="application" type="tns:application" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="searchByRecruiter">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="recruiter" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="searchByRecruiterResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="application" type="tns:application" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getApplications">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getApplicationsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:application" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addApplication">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="application" type="tns:application" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addApplicationResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="added" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://applications/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="ApplicationsManagerService" targetNamespace="http://applications/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:7891/recruitmentapp?xsd=1" namespace="http://applications/" />
+    </xsd:schema>
+  </types>
+  <message name="getApplications">
+    <part name="parameters" element="tns:getApplications" />
+  </message>
+  <message name="getApplicationsResponse">
+    <part name="parameters" element="tns:getApplicationsResponse" />
+  </message>
+  <message name="setApplications">
+    <part name="parameters" element="tns:setApplications" />
+  </message>
+  <message name="setApplicationsResponse">
+    <part name="parameters" element="tns:setApplicationsResponse" />
+  </message>
+  <message name="searchByApplicant">
+    <part name="parameters" element="tns:searchByApplicant" />
+  </message>
+  <message name="searchByApplicantResponse">
+    <part name="parameters" element="tns:searchByApplicantResponse" />
+  </message>
+  <message name="searchByRecruiter">
+    <part name="parameters" element="tns:searchByRecruiter" />
+  </message>
+  <message name="searchByRecruiterResponse">
+    <part name="parameters" element="tns:searchByRecruiterResponse" />
+  </message>
+  <message name="removeApplication">
+    <part name="parameters" element="tns:removeApplication" />
+  </message>
+  <message name="removeApplicationResponse">
+    <part name="parameters" element="tns:removeApplicationResponse" />
+  </message>
+  <message name="Exception">
+    <part name="fault" element="tns:Exception" />
+  </message>
+  <message name="searchByOffer">
+    <part name="parameters" element="tns:searchByOffer" />
+  </message>
+  <message name="searchByOfferResponse">
+    <part name="parameters" element="tns:searchByOfferResponse" />
+  </message>
+  <message name="login">
+    <part name="parameters" element="tns:login" />
+  </message>
+  <message name="loginResponse">
+    <part name="parameters" element="tns:loginResponse" />
+  </message>
+  <message name="logout">
+    <part name="parameters" element="tns:logout" />
+  </message>
+  <message name="logoutResponse">
+    <part name="parameters" element="tns:logoutResponse" />
+  </message>
+  <message name="searchByStatus">
+    <part name="parameters" element="tns:searchByStatus" />
+  </message>
+  <message name="searchByStatusResponse">
+    <part name="parameters" element="tns:searchByStatusResponse" />
+  </message>
+  <message name="addApplication">
+    <part name="parameters" element="tns:addApplication" />
+  </message>
+  <message name="addApplicationResponse">
+    <part name="parameters" element="tns:addApplicationResponse" />
+  </message>
+  <portType name="ApplicationsManager">
+    <operation name="getApplications">
+      <input wsam:Action="http://applications/ApplicationsManager/getApplicationsRequest" message="tns:getApplications" />
+      <output wsam:Action="http://applications/ApplicationsManager/getApplicationsResponse" message="tns:getApplicationsResponse" />
+    </operation>
+    <operation name="setApplications">
+      <input wsam:Action="http://applications/ApplicationsManager/setApplicationsRequest" message="tns:setApplications" />
+      <output wsam:Action="http://applications/ApplicationsManager/setApplicationsResponse" message="tns:setApplicationsResponse" />
+    </operation>
+    <operation name="searchByApplicant">
+      <input wsam:Action="http://applications/ApplicationsManager/searchByApplicantRequest" message="tns:searchByApplicant" />
+      <output wsam:Action="http://applications/ApplicationsManager/searchByApplicantResponse" message="tns:searchByApplicantResponse" />
+    </operation>
+    <operation name="searchByRecruiter">
+      <input wsam:Action="http://applications/ApplicationsManager/searchByRecruiterRequest" message="tns:searchByRecruiter" />
+      <output wsam:Action="http://applications/ApplicationsManager/searchByRecruiterResponse" message="tns:searchByRecruiterResponse" />
+    </operation>
+    <operation name="removeApplication">
+      <input wsam:Action="http://applications/ApplicationsManager/removeApplicationRequest" message="tns:removeApplication" />
+      <output wsam:Action="http://applications/ApplicationsManager/removeApplicationResponse" message="tns:removeApplicationResponse" />
+      <fault wsam:Action="http://applications/ApplicationsManager/removeApplication/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="searchByOffer">
+      <input wsam:Action="http://applications/ApplicationsManager/searchByOfferRequest" message="tns:searchByOffer" />
+      <output wsam:Action="http://applications/ApplicationsManager/searchByOfferResponse" message="tns:searchByOfferResponse" />
+    </operation>
+    <operation name="login">
+      <input wsam:Action="http://applications/ApplicationsManager/loginRequest" message="tns:login" />
+      <output wsam:Action="http://applications/ApplicationsManager/loginResponse" message="tns:loginResponse" />
+      <fault wsam:Action="http://applications/ApplicationsManager/login/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="logout">
+      <input wsam:Action="http://applications/ApplicationsManager/logoutRequest" message="tns:logout" />
+      <output wsam:Action="http://applications/ApplicationsManager/logoutResponse" message="tns:logoutResponse" />
+      <fault wsam:Action="http://applications/ApplicationsManager/logout/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="searchByStatus">
+      <input wsam:Action="http://applications/ApplicationsManager/searchByStatusRequest" message="tns:searchByStatus" />
+      <output wsam:Action="http://applications/ApplicationsManager/searchByStatusResponse" message="tns:searchByStatusResponse" />
+    </operation>
+    <operation name="addApplication">
+      <input wsam:Action="http://applications/ApplicationsManager/addApplicationRequest" message="tns:addApplication" />
+      <output wsam:Action="http://applications/ApplicationsManager/addApplicationResponse" message="tns:addApplicationResponse" />
+      <fault wsam:Action="http://applications/ApplicationsManager/addApplication/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+  </portType>
+  <binding name="ApplicationsManagerPortBinding" type="tns:ApplicationsManager">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="getApplications">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setApplications">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="searchByApplicant">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="searchByRecruiter">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="removeApplication">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="searchByOffer">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="login">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="logout">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="searchByStatus">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="addApplication">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="ApplicationsManagerService">
+    <port name="ApplicationsManagerPort" binding="tns:ApplicationsManagerPortBinding">
+      <soap:address location="http://localhost:7891/recruitmentapp" />
+    </port>
+  </service>
+</definitions>

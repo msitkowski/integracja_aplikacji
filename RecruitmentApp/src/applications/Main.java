@@ -6,6 +6,7 @@
 package applications;
 
 import java.io.FileReader;
+import java.util.ArrayList;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.ws.Endpoint;
@@ -33,7 +34,7 @@ public class Main {
             inputFile.close();
             
             ApplicationsManager am = new ApplicationsManager(
-                    applications.getApplications());
+                    new ArrayList<>(applications.getApplications()));
             
             // create job offer for new application
             JobOffer jobOffer = new JobOffer("Python Developer",
